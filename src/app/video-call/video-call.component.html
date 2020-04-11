@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="remote-stream-container">
+    <div *ngFor="let remote of remoteCalls;" [id]="remote" class="remote-stream"></div>
+    <div id="local-video" class="local-video"></div>
+  </div>
+
+  <div class="buttons">
+    <!-- insert buttons to toggle audio/video and leave/end call -->
+    <button (click)="startCall()" class="button">Start Call</button>
+    <button (click)="stopCall()" class="button">Stop Call</button>
+  </div>
+</div>
